@@ -1,0 +1,22 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+config.local.*
+secrets/
+
+# Dependencies and vendor packages
+node_modules/
+vendor/
+
+# Runtime logs
+backend/logs/*
+!backend/logs/.gitkeep
+*.log
+
+# Generated and temporary files
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db

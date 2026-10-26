@@ -1,0 +1,58 @@
+
+
+<section class="auth-container">
+        <div class="auth-card">
+            <div class="text-center">
+                <h1 class="auth-title">Kreirajte Nalog</h1>
+                <p class="auth-subtitle text-light">Postanite dio KICKS & CO. kluba i ostvarite posebne pogodnosti.</p>
+            </div>
+
+            <!-- Form -->
+            <form action="#" method="POST">
+                <div class="row g-2 mb-3">
+                    <div class="col-6">
+                        <label for="firstName" class="form-label">Ime</label>
+                        <input type="text" class="form-control custom-input" id="firstName" placeholder="Ime" required>
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName" class="form-label">Prezime</label>
+                        <input type="text" class="form-control custom-input" id="lastName" placeholder="Prezime" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail Adresa</label>
+                    <div class="input-group input-group-custom">
+                        <span class="input-group-text input-group-text-custom"><i class="fa-regular fa-envelope"></i></span>
+                        <input type="email" class="form-control custom-input" id="email" placeholder="ime@primjer.com" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Lozinka</label>
+                    <div class="input-group input-group-custom">
+                        <span class="input-group-text input-group-text-custom"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control custom-input" id="password" placeholder="Najmanje 8 karaktera" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Potvrdi Lozinku</label>
+                    <div class="input-group input-group-custom">
+                        <span class="input-group-text input-group-text-custom"><i class="fa-solid fa-shield-halved"></i></span>
+                        <input type="password" class="form-control custom-input" id="confirmPassword" placeholder="Ponovite lozinku" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-accent w-100 py-2 font-weight-bold">
+                    <i class="fa-solid fa-user-plus me-2"></i> Kreiraj Nalog
+                </button>
+            </form>
+
+            <div class="text-center mt-4 pt-2 border-top border-secondary border-opacity-10">
+                <p class="small text-light mb-0">
+                    Već imate nalog? <a href="#login" class="text-white font-weight-bold text-decoration-none border-bottom border-danger">Prijavite se</a>
+                </p>
+            </div>
+        </div>
+</section>
