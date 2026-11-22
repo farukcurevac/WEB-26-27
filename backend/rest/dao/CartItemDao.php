@@ -15,4 +15,10 @@ class CartItemDao extends BaseDao {
             ['user_id' => $user_id]
         );
     }
+
+  
+
+    public function clear_user_cart($user_id) {
+        return $this->execute("DELETE FROM cart_items WHERE user_id = :user_id", ['user_id' => $user_id]);
+    }
 }

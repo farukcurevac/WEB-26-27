@@ -8,4 +8,14 @@ class Config {
     public static function DB_PORT() { return self::get_env("DB_PORT", "3306"); }
     public static function DB_USER() { return self::get_env("DB_USER", "root"); }
     public static function DB_PASSWORD() { return self::get_env("DB_PASSWORD", ""); }
+
+
+public static function EXTERNAL_API_URL() {
+        return Config::get_env("EXTERNAL_API_URL", "https://open.er-api.com/v6/latest");
+    }
+
+    public static function EXTERNAL_API_KEY() {
+        return Config::get_env("EXTERNAL_API_KEY", "your_api_key_here");
+    }
+
 }
